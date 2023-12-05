@@ -4,7 +4,7 @@ use varman::Config;
 
 fn main() {
     let config = Config::new().unwrap_or_else(|err| {
-        eprintln!("解析命令出错: {}", err);
+        eprintln!("解析命令: {}", err);
         process::exit(1);
     });
     
